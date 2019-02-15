@@ -1,0 +1,41 @@
+.fullmenu{
+	display: block;
+
+	&__link{
+		display: inline-block;
+		width: 20px;
+		height: 1px;
+		background: #615540;
+		position: relative;
+		vertical-align: middle;
+		
+		&:before{
+			content:'';
+			display: block;
+			width: 20px;
+			height: 1px;
+			background: #615540;
+			position: absolute;
+			top: -10px;
+			left: 0;
+		}
+
+		&:after{
+			content:'';
+			display: block;
+			width: 20px;
+			height: 1px;
+			background: #615540;
+			position: absolute;
+			top: 10px;
+			left: 0;
+		}
+	}
+
+	&__title{
+		color: white;
+		font-weight: 700;
+		font-size: 15px;
+		padding-left: 10px;
+	}
+}

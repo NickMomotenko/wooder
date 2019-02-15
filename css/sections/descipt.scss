@@ -1,0 +1,44 @@
+.descipt{
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  position: relative;
+
+  &--left{
+    &:before{
+      content:'';
+      width: 45px;
+      height: 5px;
+      background: #9e8b69;
+      position: absolute;
+      top: 25%;
+      left: -15%;
+      transform: translateY(-25%);
+
+      @include phones{
+        display: none;
+      }
+    }
+  }
+
+  &--right{
+    &:after{
+      content:'';
+      width: 45px;
+      height: 5px;
+      background: #9e8b69;
+      position: absolute;
+      top: 25%;
+      right: -15%;
+      transform: translateY(-25%);
+
+      @include phones{
+        display: none;
+      }
+    }
+  }
+
+  &--black{
+    color: #464646;
+  }
+}

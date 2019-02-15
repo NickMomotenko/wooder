@@ -1,0 +1,108 @@
+.menuscreen{
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	transition: 2s all;
+
+	display: none;
+
+	background: black;
+
+	&__nav{
+		height: 100%;
+
+		.nav{
+			height: 100%;
+
+			&__list{
+				height: 100%;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			&__item{
+				padding-right: 0;
+				margin-bottom: 40px;
+
+				&:last-child{
+					margin-bottom:0;
+				}
+			}
+
+			&__link{
+				font-size: 60px;
+				text-transform: uppercase;
+
+				@include phones{
+					font-size: 40px;
+				}
+			}
+
+			@include tablets{
+				display: block;
+			}
+		}
+	}
+
+	&__cross{
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		height: 25px;
+		width: 25px;
+
+		.cross{
+			height: 25px;
+			width: 25px;
+			display: block;
+			position: relative;
+
+			&:after{
+				content:'';
+				display: inline-block;
+				width: 25px;
+				height: 2px;
+				background: white;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotate(45deg);
+			}
+
+			&:before{
+				content:'';
+				display: inline-block;
+				width: 25px;
+				height: 2px;
+				background: white;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+}
+
+.on{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation:show 1s linear;
+}
+
+
+@keyframes show{
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}

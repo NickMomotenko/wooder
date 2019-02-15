@@ -1,0 +1,39 @@
+@function rem($px){
+	@return $px/16px+0rem;
+}
+
+@mixin smallmonitor{
+	@media screen and (max-width: 1024px){
+		@content;
+	}
+}
+
+@mixin bigtablets{
+	@media screen and (max-width: 900px){
+		@content;
+	}
+}
+
+@mixin tablets{
+	@media screen and (max-width: 768px){
+		@content;
+	}
+}
+
+@mixin bigphones{
+	@media screen and (max-width: 600px){
+		@content;
+	}
+}
+
+@mixin phones{
+	@media screen and (max-width: 480px){
+		@content;
+	}
+}
+
+@mixin smallphones{
+	@media screen and (max-width: 320px){
+		@content;
+	}
+}

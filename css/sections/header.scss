@@ -1,0 +1,48 @@
+.header{
+	display: flex;
+	justify-content:space-between;
+	align-items: center;
+	position: relative;
+	padding-top: 25px;
+
+	&__fullmenu{
+		height: 25px;
+		margin-left: 20px;
+	}
+
+	&__info{
+		margin-right: 20px;
+	}
+}
+
+.info{
+	display: flex;
+
+	&__faq{
+		padding-right: 40px;
+
+		&-link{
+			width: 23px;
+			height: 23px;
+			display: inline-block;
+			background: url(../img/intro/faq-icon.png) center center no-repeat;
+		}
+	}
+
+	&__languages{
+
+		.languages{
+			background: transparent;
+			border: none;
+			color: white;
+			outline: none;
+
+			option{
+				color: black;
+				background: white;
+				border: none;
+			}
+		}
+	}
+}
+

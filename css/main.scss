@@ -1,0 +1,66 @@
+
+//breakpoints
+
+$tablets:768px;
+$phones:480px;
+
+
+//config
+@import 'config/variables.scss';
+@import 'config/media.scss';
+
+//layout
+@import 'layout/base.scss';
+@import 'layout/fonts.css';
+
+/*preloader*/
+@import 'sections/preloader.scss';
+
+/*styles for titles, description for titles, buttons*/
+@import 'sections/title.scss';
+@import 'sections/descipt.scss';
+@import 'sections/button.scss';
+
+
+/*intro styles*/
+@import 'sections/intro.scss';
+@import 'sections/intro-content.scss';
+@import 'sections/intro-desctiption.scss';
+
+/*header styles*/
+@import 'sections/header.scss';
+
+/*fullmenu styles*/
+@import 'sections/fullmenu-icon.scss';
+
+/*menu navigation styles*/
+@import 'sections/navigation.scss';
+
+/*styles for logo*/
+@import 'sections/logo.scss';
+
+/*paginator styles*/
+@import 'sections/paginator.scss';
+
+/*section furniture styles*/
+@import 'sections/furniture.scss';
+@import 'sections/furniture-display.scss';
+@import 'sections/furniture-video.scss';
+
+/*section watch styles*/
+@import 'sections/watch.scss';
+
+/*section watch styles*/
+@import 'sections/about.scss';
+
+/*section footer styles*/
+@import 'sections/footer.scss';
+
+
+
+
+
+
+
+
+

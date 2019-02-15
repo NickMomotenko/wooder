@@ -1,0 +1,26 @@
+.intro{
+	height: 100%;
+	width: 100%;
+	background: url(../img/intro/intro-bg-1.png) center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	position: relative;
+
+	&__wrapper{
+		height: 100%;
+		width: 100%;
+		background: rgba(black, .8);
+	}
+
+	&:after{
+		content:'';
+		display: inline-block;
+		width: 2px;
+		height: 55px;
+		background: #a9946e;
+		position: absolute;
+		top: 96%;
+		right: 20%;
+	}
+}
+

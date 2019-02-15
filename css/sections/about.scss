@@ -1,0 +1,89 @@
+.about{
+	height: 80%;
+	width: 100%;
+	color: black;
+	position: relative;
+
+	@include tablets{
+		height: 90%;
+		padding: 25px 0;
+	}
+
+	&__wrapper{
+		height: 100%;
+		display: flex;
+		align-items: center;
+
+		@include tablets{
+			flex-direction: column;
+			padding: 0 5%;
+
+		}
+	}
+
+	&__picture, &__us{
+		flex:1;
+	}
+
+	&__picture{
+		max-width: 590px;
+		max-height: 400px;
+		margin-right: 100px;
+		box-shadow: 0 0 20px grey;
+
+		@include tablets{
+			margin-right: 0;
+			margin-bottom: 25px;
+		}
+	}
+
+	&__icon{
+		height: 100%;
+		width: 100%;
+
+		@includer bigphones{
+			padding: 0 5%;
+		}
+	}
+
+	&__us{
+
+		@include tablets{
+			text-align: center;
+			order: 1;
+		}
+	}
+
+}
+
+.us{
+	&__title{
+		margin-bottom: 30px;
+	}
+
+	&__descipt{
+		margin-bottom: 30px;
+	}
+
+	&__name{
+		color: #d0d0d0;
+		font-size: 170px;
+		font-weight: 700;
+		position: absolute;
+		top:50%;
+		left: -5%;
+		transform: translateY(-50%);
+		opacity: .5;
+		user-select: none;
+
+		@include phones{
+			font-size: 120px;
+			top: 40%;
+		}
+
+		@include smallphones{
+			font-size: 100px;
+    		top: 22%;
+		}
+	}
+}

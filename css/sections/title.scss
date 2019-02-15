@@ -1,0 +1,50 @@
+.title{
+  font-size: 48px;
+  font-weight: 700;
+  color: #bea67c;
+  text-transform: uppercase;
+  position: relative;
+
+  &--left{
+    &:before{
+      content:'';
+      width: 130px;
+      height: 2px;
+      background: white;
+      position: absolute;
+      top: 25%;
+      left: -30%;
+      transform: translateY(-25%);
+
+      @include phones{
+        display: none;
+      }
+    }
+  }
+
+  &--right{
+    &:after{
+      content:'';
+      width: 130px;
+      height: 2px;
+      background: black;
+      position: absolute;
+      top: 25%;
+      right: -30%;
+      transform: translateY(-25%);
+
+      @include phones{
+        display: none;
+      }
+    }
+  }
+
+  &--black{
+    color: black;
+
+    &:before{
+      content:'';
+      background: black;
+    }
+  }
+}

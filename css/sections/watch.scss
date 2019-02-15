@@ -1,0 +1,60 @@
+.watch{
+	height: 80%;
+	width: 100%;
+	background: url(../img/watch/watch-bg.png) center center no-repeat;
+	position: relative;
+
+	@include tablets{
+		height: 90%;
+	}
+
+	&:after{
+		content:'';
+		height: 70px;
+		width: 1px;
+		background: #bea67c;
+		position: absolute;
+		top: 50%;
+		right: 10%;
+		transform: translateY(-50%);
+	}
+
+	&__wrapper{
+		height: 100%;
+		width: 60%;
+		padding-left: 200px;
+		color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		@include smallmonitor{
+			width: 80%;
+		}
+
+		@include bigtablets{
+			width: 100%;
+		}
+
+		@include tablets{
+			width: 100%;
+			padding: 0 5%;
+			align-items: center;
+		}
+	}
+
+	&__title{
+		margin-bottom: 45px;
+
+			.title{
+
+				@include phones{
+					font-size: 40px;
+				}
+			}
+	}
+	
+	&__descipt{
+		margin-bottom: 45px;
+	}
+}

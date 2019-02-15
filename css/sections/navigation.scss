@@ -1,0 +1,30 @@
+.nav{
+
+	@include tablets{
+		display: none;
+	}
+
+	&__list{
+		display: flex;
+		align-items: center;
+	}
+
+	&__item{
+		padding-right: 90px;
+
+		&:last-child{
+			padding-right: 0;
+		}
+	}
+
+	&__link{
+		font-weight: 700;
+		font-size: 15px;
+		color: white;
+		transition: .5s;
+
+		&:hover{
+			color:#a6a6a6;
+		}
+	}
+}

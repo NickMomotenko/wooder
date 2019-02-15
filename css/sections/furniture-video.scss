@@ -1,0 +1,118 @@
+.video{
+	text-align: center;
+
+	@include tablets{
+		padding: 0 5%;
+	}
+
+	&__content{
+		margin-bottom: 75px;
+
+		&-title{
+			margin-bottom: 40px;
+		}
+	}
+
+	&__list{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include phones{
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__item{
+		margin-right: 70px;
+
+		&:last-child{
+			margin-right: 0;
+		}
+
+		@include tablets{
+			margin-right: 35px;
+		}
+
+		@include phones{
+			margin-right: 0;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__preview{
+		height: 250px;
+		width: 250px;
+		cursor: pointer;
+		padding: 10px;
+		margin-bottom: 40px;
+		border: 1px solid grey;
+		border-radius: 50%;
+		position: relative;
+
+		@include bigtablets{
+			height: 200px;
+    		width: 200px;
+		}
+
+		@include tablets{
+			height: 150px;
+    		width: 150px;
+		}
+
+		@include bigphones{
+			height: 100px;
+    		width: 100px;
+		}
+
+		@include phones{
+			margin-bottom: 20px;
+			height: 150px;
+    		width: 150px;
+		}
+
+		&:hover{
+			border: 2px solid grey;
+		}
+
+		&:before{
+			content:'';
+			height: 70px;
+			width: 70px;
+			background: #9e8b69;
+			border-radius: 50%;
+			opacity: .8;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+
+			@include bigphones{
+				display: none;
+			}
+		}
+
+		&:after{
+			content:'';
+			border: 20px solid transparent;	
+			border-left: 25px solid white;
+			border-radius: 5px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-25%,-50%);
+		}
+
+		&-icon{
+			height: 100%;
+			width: 100%;
+			border-radius: 50%;
+		}
+
+		&-name{
+			font-weight: 400;
+			font-size: 15px;
+		}
+	}
+}

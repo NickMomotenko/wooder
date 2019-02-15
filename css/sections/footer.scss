@@ -1,0 +1,54 @@
+.footer{
+	background: url(../img/footer/footer-bg.png) center center no-repeat;
+	
+	&__wrapper{
+		background: black;
+		padding: 20px 0;
+		opacity: .8;
+	}
+
+	&__data{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		opacity: 1;
+		padding: 0 5%;
+	}
+
+	&__logo{
+		
+		@include tablets{
+			margin-right: 0;
+		}
+
+		@include bigphones {
+			margin-right: 15px;
+		}
+
+		.logo{
+			@include smallphones{
+				font-size: 30px;
+			}
+		}
+	}
+
+	&__name{
+		font-size: 15px;
+		font-weight: 400;
+		color: white;
+
+		@include phones{
+			display: none;
+		}
+	}
+
+	&__designed{
+		font-size: 15px;
+		font-weight: 400;
+		color: #464646;
+
+		span{
+			color: white;
+		}
+	}
+}

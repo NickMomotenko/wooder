@@ -1,0 +1,26 @@
+.desctiption{
+
+	@include phones{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&__title{
+		font-size: 100px;
+		font-weight: 700;
+		letter-spacing: 5px;
+		color: #bea67c;
+		text-transform: uppercase;
+		letter-spacing: 10px;
+		margin-bottom: 50px;
+
+		@include tablets{
+			font-size: 80px;
+		}
+
+		@include phones{
+			font-size: 50px;
+		}
+	}
+}

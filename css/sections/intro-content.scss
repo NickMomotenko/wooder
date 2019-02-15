@@ -1,0 +1,100 @@
+.content{
+	height: 90%;
+	position: relative;
+	
+	&__description{
+		height: 100%;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__text{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: rotate(90deg);
+
+		.text{
+			font-weight: 700;
+			font-size: 14px;
+			color: #a9946e;
+			text-transform: uppercase;
+		}
+
+		@include tablets{
+			right: -7%;
+		}
+
+		@include phones{
+			top: 80%;
+		}
+	}
+
+	&__scroll{
+		transform: rotate(90deg);
+		position: absolute;
+		top: 85%;
+		left: 30%;
+	}
+}
+
+.scroll{
+
+	&__arrow{
+		display: inline-block;
+		width: 35px;
+	    height: 15px;
+	    background: url(../img/intro/arrow.png) no-repeat;
+	    vertical-align: middle;
+	    margin-right: 10px;
+	    position: relative;
+
+	    &:before{
+	    	content:'';
+	    	display: inline-block;
+	    	height: 30px;
+	    	width: 20px;
+	    	background: url(../img/intro/mouse-icon.png) no-repeat;
+	    	transform: rotate(90deg);
+	    	position: absolute;
+	    	top: -55%;
+	    	right: 150%;
+
+	    	animation-name: scrollMouse;
+	    	animation-duration:1.5s;
+	    	animation-timing-function:ease-in-out;
+	    	animation-direction:alternate;
+	    	animation-play-state:running;
+	    	animation-iteration-count:infinite;
+
+	    }
+	}
+
+	&__text{
+		color: #3b3a3a;
+		font-weight: 700;
+		font-size: 15px;
+		text-decoration: underline;
+	}
+}
+
+@keyframes scrollMouse{
+	from{
+		right: 150%;
+	}
+
+	to{
+		right: 50%;
+	}
+}
+
+@keyframes arrowAnimation{
+	from{
+		width: 35px;
+	}
+
+	to{
+		width: 45px;
+	}
+}

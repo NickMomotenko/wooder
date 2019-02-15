@@ -1,0 +1,104 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: rem(16px);
+
+  @include tablets{
+    font-size: rem(15px);
+  }
+
+  @include phones{
+    font-size: rem(14px);
+  }
+}
+
+
+body,html{
+  height: 100%;
+  font-family: 'ProximaNova';
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+li{
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+  margin-top: 0;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+}
+
+.wrapper{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow-x:hidden;
+}
+
+.container{
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  @include smallmonitor{
+    max-width: 1024px;
+    width: 100%;
+  }
+  
+  @include bigtablets{
+    max-width: 900px;
+    width: 100%;
+  }
+
+  @include tablets{
+    max-width: 768px;
+    width: 100%;
+  }
+
+  @include bigphones{
+    max-width: 600px;
+    width: 100%;
+  }
+
+  @include phones{
+    max-width: 480px;
+    width: 100%;
+  }
+
+  @include smallphones{
+    max-width: 320px;
+    width: 100%;
+  }
+}
+
+.white{
+  color: white;
+}
+
+
+.section{
+  width: 100%;
+}
